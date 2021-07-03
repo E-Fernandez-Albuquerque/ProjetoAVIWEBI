@@ -38,7 +38,78 @@ body {
 
 .content {
     background-color: rgb(200, 200, 250);
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    align-items: center;
+    padding-left: 8px;
+    padding-top: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content>h1 {
+    padding: 10px;
+}
+
+.lista {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.adicionar_item {
+    margin: 4px auto;
+    display: flex;
+    width: 60%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 5 px;
+    box-shadow: 1px 1px 5px black
+}
+
+.adicionar_item>div {
+    width: 80%;
+    text-align: center;
+}
+
+.adicionar_item>input {
+    margin: 0 8px;
+    float: left;
+}
+
+.adicionar_item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: black;
+    color: rgb(100, 100, 150);
+}
+
+.adicionar_new-item {
+    display: flex;
+    background-color: rgba(206, 206, 255, 0.904);
+    width: 60%;
+    height: 40px;
+    justify-content: space-evenly;
+    padding: 5px;
+    box-shadow: 1px 1px 5px black;
+    margin: 10px;
+    font: inherit;
+}
+
+.adicionar_new-item>input {
+    background-color: rgb(206, 206, 255, 0.904);
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+
+.adicionar_new-item>input::placeholder {
+    font-style: italic;
+    font-weight: normal;
 }
 
 footer {

@@ -17,7 +17,28 @@
         <h2>Docente: Rodrigo Lira</h2>
         <h2>Discentes: Eric Fernandez e Marcelo Mendes</h2>
     </div>
-    <div class="content"></div>
+    <div class="content" id="conteudo">
+        <h1>Agenda de Compromissos</h1>
+        <label for="data">CALENDÁRIO</label>
+        <input type="date" id="data" name="dataCalend">
+
+        <div class="adicionar_new-item" id="newItem">
+            <div>V</div>
+            <input type="text" id="novoItem" placeholder="Digite e pressione enter para adicionar a tarefa">
+            <div>V</div>
+        </div>
+
+        <input type="button" value="Adicionar item" onclick="newObject()">
+
+        <div class="lista">
+            <label class="adicionar_item">
+                    <input type="checkbox">
+                    <div>teste de item 1</div>
+                    <div>data</div>
+                    <input type="button" value="X">
+            </label>
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="scripts.js"></script>
