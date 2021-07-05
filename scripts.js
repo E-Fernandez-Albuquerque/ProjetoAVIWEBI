@@ -17,7 +17,7 @@ function newObject() {
     var data = document.getElementById('data').value
     item.classList.add('adicionar_item')
     item.id = `id${++task}`
-    item.innerHTML = `<input type="checkbox">
+    item.innerHTML = `<input type="checkbox" id="check${task}">
                         <div>${tarefa}</div>
                         <div>${data}</div>
                         <input type="button" value="X" onclick="deleteObject(${task})">
@@ -28,4 +28,16 @@ function newObject() {
 function deleteObject(id) {
     var item = document.getElementById(`id${id}`)
     item.remove()
+}
+
+function changeTheme() {
+    var bgnd = document.getElementById('conteudo')
+    var bgndNewItem = document.getElementById('newItem')
+    var title = document.querySelector('.title')
+    var footer = document.querySelector('footer span')
+    var color = document.getElementById('colortheme').value
+    bgnd.style = `background-color: ${color}`
+    bgndNewItem.style = `background-color: ${color}`
+    title.style = `color: ${color}`
+    footer.style = `color: ${color}`
 }

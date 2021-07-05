@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <div class="title">
         <h1><strong>IFPE - Instituto Federal de Pernambuco</strong></h1>
         <h2>Projeto de agenda pessoal</h2>
@@ -17,14 +18,26 @@
         <h2>Docente: Rodrigo Lira</h2>
         <h2>Discentes: Eric Fernandez e Marcelo Mendes</h2>
     </div>
+
+
+
+
     <div class="content" id="conteudo">
         <h1>Agenda de Compromissos</h1>
-        <label for="data">CALENDÁRIO</label>
+
+        <div class="theme">
+            <h3>Escolha o tema da sua agenda pessoal:</h3>
+            <span>Cor RGB: </span>
+            <input type="color" id="colortheme">
+            <input type="button" value="Aplicar tema" onclick="changeTheme()">
+        </div>
+
+        <label for="data" class="data">CALENDÁRIO</label>
         <input type="date" id="data" name="dataCalend">
 
         <div class="adicionar_new-item" id="newItem">
             <div>V</div>
-            <input type="text" id="novoItem" placeholder="Digite e pressione enter para adicionar a tarefa">
+            <input type="text" id="novoItem" placeholder="Digite a tarefa que deseja adicionar">
             <div>V</div>
         </div>
 

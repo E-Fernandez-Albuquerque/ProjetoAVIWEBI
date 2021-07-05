@@ -36,6 +36,36 @@ body {
     transition: all 0.3s;
 }
 
+.theme {
+    width: 60%;
+    display: flex;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    justify-content: center;
+    padding: 20px;
+}
+
+.theme h3 {
+    padding: 6px 20px;
+}
+
+.theme span {
+    padding: 6px 20px;
+}
+
+.theme input {
+    padding: 6px 20px;
+    margin-right: 10px;
+}
+
+#colortheme {
+    padding: 2px
+}
+
+.data {
+    margin-top: 15px
+}
+
 .content {
     background-color: rgb(200, 200, 250);
     display: flex;
@@ -83,8 +113,8 @@ body {
 .adicionar_item:hover {
     cursor: pointer;
     transition: all .5s ease;
-    background-color: black;
-    color: rgb(100, 100, 150);
+    background-color: rgb(104, 151, 139);
+    color: rgb(36, 36, 36);
 }
 
 .adicionar_new-item {
@@ -100,16 +130,19 @@ body {
 }
 
 .adicionar_new-item>input {
-    background-color: rgb(206, 206, 255, 0.904);
-    border: none;
+    background-color: rgb(255, 255, 255, 1);
+    border: 1px solid black;
     width: 80%;
     outline: none;
     font: inherit;
+    text-align: center;
 }
 
 .adicionar_new-item>input::placeholder {
     font-style: italic;
     font-weight: normal;
+    text-align: center;
+    color: rgb(180, 180, 180)
 }
 
 footer {
