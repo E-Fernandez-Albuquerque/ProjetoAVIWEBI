@@ -9,15 +9,23 @@ let novoItem = (tarefa, status = '') => {
 
 }
 
+var task = 0
+
 function newObject() {
     let item = document.createElement('label')
     var tarefa = document.getElementById('novoItem').value
     var data = document.getElementById('data').value
     item.classList.add('adicionar_item')
+    item.id = `id${++task}`
     item.innerHTML = `<input type="checkbox">
                         <div>${tarefa}</div>
                         <div>${data}</div>
-                        <input type="button" value="X">
+                        <input type="button" value="X" onclick="deleteObject(${task})">
 `
-    document.getElementById('conteudo').appendChild(item)
+    document.getElementById('list').appendChild(item)
+}
+
+function deleteObject(id) {
+    var item = document.getElementById(`id${id}`)
+    item.remove()
 }
