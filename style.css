@@ -110,6 +110,10 @@ body {
     float: left;
 }
 
+.adicionar_item>input[type='checkbox']:checked+div {
+    text-decoration: line-through;
+}
+
 .adicionar_item:hover {
     cursor: pointer;
     transition: all .5s ease;

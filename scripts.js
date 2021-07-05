@@ -6,7 +6,6 @@ let novoItem = (tarefa, status = '') => {
                       <input type="button" value="X">
     `
     document.getElementById('novoItem').appendChild(item);
-
 }
 
 var task = 0
@@ -18,8 +17,8 @@ function newObject() {
     item.classList.add('adicionar_item')
     item.id = `id${++task}`
     item.innerHTML = `<input type="checkbox" id="check${task}">
-                        <div>${tarefa}</div>
-                        <div>${data}</div>
+                        <div><span>${tarefa}</span></div>
+                        <div><span>${data}</span></div>
                         <input type="button" value="X" onclick="deleteObject(${task})">
 `
     document.getElementById('list').appendChild(item)
@@ -40,4 +39,15 @@ function changeTheme() {
     bgndNewItem.style = `background-color: ${color}`
     title.style = `color: ${color}`
     footer.style = `color: ${color}`
+}
+
+function completeTask(id) {
+    var task = document.getElementById(`check${id}`)
+    var text = document.querySelector('.adicionar_item span')
+    if (task.checked == true) {
+        console.log('ok')
+        text.style = 'text-decoration: line-through'
+    } else {
+        text.style = 'text-decoration: none'
+    }
 }
