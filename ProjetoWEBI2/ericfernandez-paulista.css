@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    display: flex;
+    height: 120px;
+    background: #620283
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    justify-content: left;
+    font-family: sans-serif;
+    align-items: center;
+    color: #b5f44a;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.header-title span {
+    width: 100%;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    padding: 10px;
+    color: #b5f44a;
+    border: solid 1px #b5f44a;
+    background-color: #700088;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #b5f44a;
+}
+
+.map a,
+.map span {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.map a {
+    text-decoration: none;
+    color: #070707
+}
+
+.map a:visited {
+    color: #620283;
+    text-decoration: none;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table table {
+    margin-top: 20px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #dafaa3;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #e3fbba;
+}
+
+.table th {
+    background-color: #bef65f;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.table th {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #b5f44a;
+    height: 27px;
+    width: 100%;
+}
+
+footer span {
+    font-size: 13px;
+    font-weight: bolder;
+    color: #620283;
+}
